@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>挨拶翻訳</title>
+</head>
+<body>
+<p>言語選択画面</p>
+<form th:action="@{greeting/japanese}" method="post">
+    <select name="lang">
+        <option value="en">英語</option>
+        <option value="ja">日本語</option>
+        <option value="fr">フランス語</option>
+    </select>
+
+    <input type="submit" value="選択" />
+</form>
+</body>
+</html>
